@@ -108,11 +108,13 @@ p {
 
 .hero_info {
   width: 859px;
+  margin-top: -50px;
 }
 
 .hero_img {
+  position: static;
   width: 1034px;
-  margin-top: 40px;
+  margin-top: 35px;
   margin-right: 59px;
 }
 
@@ -184,10 +186,11 @@ p {
 
 .info_section3 {
   width: 612px;
+  margin-top: -30px;
 }
 
-.img_section3 {
-  width: 970px;
+.img_section3 img{
+  width: 460px;
 }
 
 .text--white {
