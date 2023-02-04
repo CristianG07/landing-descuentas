@@ -222,7 +222,7 @@ p {
 
 .content_section4 {
   display: flex;
-  height: 554px;
+  height: 564px;
   align-items: center;
 }
 
@@ -232,16 +232,20 @@ p {
 
 .img_section4 {
   position: relative;
-  bottom: -100px;
+  bottom: -105px;
   right: 3%;
 }
 
 .img_section4  img{
-  width: 672px;
+  width: 730px;
 }
 
 
 /* SECTION 5 STYLES */
+
+.section5 {
+  margin-top: 250px;
+}
 
 .btn--modify,
 .text_section5 {
