@@ -3,7 +3,7 @@ const form = document.forms['FORMULARIO']
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
-  location.href = '../index.html';
+  location.href = '/';
   // fetch(scriptURL, { method: 'POST', body: new FormData(form)})
   //     .then(response => console.log('Success!', response))
   //     .then(() => location.href = '../index.html')
