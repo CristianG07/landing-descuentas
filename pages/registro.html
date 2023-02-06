@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -29,24 +29,25 @@
           </h5>
         </div>
         <div>
-          <form class="form_registro">
+          <form name="SUBCRITOS" class="form_registro" id="form_registro">
             <div class="inputs_registro">
               <div class="input1">
-                <label for="">Nombre</label>
-                <input type="text">
+                <label for="text">Nombre</label>
+                <input id="usuario" type="text" name="usuario" required>
               </div>
               <div class="input2">
-                <label for="">Correo electrónico</label>
-                <input type="text">
+                <label for="email">Correo electrónico</label>
+                <input id="correo" type="email" name="correo" required>
               </div>
             </div>
             <div class="content_btn">
-              <a class="btn_nav" href="../pages/formulario.html">REGISTRARME</a>
+              <button type="submit" class="btn_nav">REGISTRARME</button>
             </div>
           </form>
         </div>
       </div>
     </section>
   </main>
+  <script src="../js/registro.js"></script>
 </body>
 </html>

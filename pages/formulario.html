@@ -18,7 +18,7 @@
       </nav>
     </header>
 
-    <main>
+    <main class="main">
       <section class="container_form">
         <div class="content_form">
           <div class="bg--black info_formulario">
@@ -34,7 +34,7 @@
           </div>
 
           <div class="content_formulario">
-            <form class="form_formulario">
+            <form class="form_formulario" name="FORMULARIO">
               <div class="inputs_formulario">
                 <div class="content1 form">
                   <label>¿Qué descuentos te interesan más?</label>
@@ -58,12 +58,10 @@
                     <select></select>
                   </div>
                   <div class="content6 form">
-                    <label for="">¿Tienes tarjeta bancaria?</label>
-                    <select class="select_form">
-                      <div>
-                        <option value="si">Si</option>
-                        <option value="no">No</option>
-                      </div>
+                    <label>¿Tienes tarjeta bancaria?</label>
+                    <select class="select_form" name="tarjeta">
+                      <option value="si">Si</option>
+                      <option value="no">No</option>
                     </select>
                   </div>
                 </div>
@@ -72,8 +70,8 @@
                   <select></select>
                 </div>
                 <div class="content_btn">
-                  <a class="btn_nav" href="../pages/formulario.html"
-                    >ENVIAR FORMULARIO</a
+                  <button type="submit" class="btn_nav" href="../pages/formulario.html"
+                    >ENVIAR FORMULARIO</button
                   >
                 </div>
               </div>
@@ -82,5 +80,6 @@
         </div>
       </section>
     </main>
+    <script src="../js/formulario.js"></script>
   </body>
 </html>

@@ -74,6 +74,7 @@ p {
 
 .container {
   width: 88%;
+  max-width: 1300;
   margin-left: auto;
   margin-right: auto;
 }
@@ -382,6 +383,24 @@ p {
     line-height: 24px;
   }
 
+  .header {
+    height: 80px;
+  }
+
+  .hero {
+    margin-top: 200px;
+    height: 100%;
+  }
+
+  .content_marcas,
+  .logos_empresas {
+    gap: 10px;
+  }
+
+  .section2 {
+    margin: 200px 0 90px 0;
+  }
+
   .img_section4  img{
     width: 470px;
   }
@@ -410,6 +429,11 @@ p {
 
   .padding-top {
     margin-top: 110px;
+  }
+
+  .hero {
+    margin-top: 150px;
+    height: 100vh;
   }
 
   .hero_section {
@@ -516,6 +540,11 @@ p {
     margin-top: -30px;
   }
 
+  .hero {
+    margin-top: 80px;
+    /* height: 100vh; */
+  }
+
   .btn_primry {
     font-size: 14px;
   }
@@ -534,7 +563,7 @@ p {
 
   .content_marcas,
   .logos_empresas {
-    gap: 20px;
+    gap: 10px;
   }
 
   .img_section3 img{
@@ -547,5 +576,11 @@ p {
 
   .section2 {
     margin-top: 100px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .nav {
+    justify-content: center;
   }
 }
