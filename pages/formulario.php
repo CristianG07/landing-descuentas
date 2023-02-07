@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
 
     <!-- LINKS CSS -->
     <link rel="stylesheet" href="../css/normalize.css" />
@@ -14,7 +16,7 @@
   <body>
     <header class="header">
       <nav class="container nav">
-        <a href="/" class="logo">DESCUENTA$</a>
+        <a href="../index.html" class="logo">DESCUENTA$</a>
       </nav>
     </header>
 
@@ -34,7 +36,7 @@
           </div>
 
           <div class="content_formulario">
-            <form class="form_formulario" name="FORMULARIO">
+            <form class="form_formulario" method="POST">
               <div class="inputs_formulario">
                 <div class="content1 form">
                   <label>¿Qué descuentos te interesan más?</label>
@@ -58,8 +60,8 @@
                     <select></select>
                   </div>
                   <div class="content6 form">
-                    <label>¿Tienes tarjeta bancaria?</label>
-                    <select class="select_form" name="tarjeta">
+                    <label for="tarjeta_bancaria">¿Tienes tarjeta bancaria?</label>
+                    <select class="select_form" name="tarjeta_bancaria">
                       <option value="si">Si</option>
                       <option value="no">No</option>
                     </select>
@@ -70,7 +72,7 @@
                   <select></select>
                 </div>
                 <div class="content_btn">
-                  <button type="submit" class="btn_nav"
+                  <button type="submit" name="submit" class="btn_nav"
                     >ENVIAR FORMULARIO</button
                   >
                 </div>
@@ -80,6 +82,61 @@
         </div>
       </section>
     </main>
-    <script src="../js/formulario.js"></script>
   </body>
 </html>
+
+
+
+<?php
+
+include 'connection.php';
+
+if(isset($_POST['submit'])) {
+  //hacemos llamado al imput de formuario
+  $usuario = $_GET["usuario"];
+  $correo = $_GET["correo"];
+  $tarjeta_bancaria = $_POST["tarjeta_bancaria"] ;
+  
+  //insertamos datos de registro a la base de datos
+  $instruccion_SQL = "INSERT INTO `registro` (`id`, `usuario`, `correo`, `tarjeta_bancaria`) VALUES (NULL, '$usuario', '$correo', '$tarjeta_bancaria')";
+                             
+  $resultado = mysqli_query($connec,$instruccion_SQL);
+  
+  if ($resultado) {
+    
+    ?>
+    <script>  
+      swal({
+        title: "Success",
+        text: "Data insertd",
+        icon: "success",
+      })
+      .then((value) => {
+        location.href = "../index.html";
+      });
+  
+    </script>
+
+    <?php
+  
+  } else {
+  
+    ?>
+  
+    <script>
+  
+      swal({
+        title: "Failed",
+        text: "Data not insertd",
+        icon: "error",
+      });
+  
+    </script>
+
+    <?php
+  }
+}
+// header( header: 'Location: ../index.html' );
+
+?>
+

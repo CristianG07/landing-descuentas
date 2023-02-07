@@ -4,17 +4,20 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
 
   <!-- LINKS CSS -->
   <link rel="stylesheet" href="../css/normalize.css">
   <link rel="stylesheet" href="../css/registro.css">
+
 
   <title>Descuenta$</title>
 </head>
 <body>
   <header class="header">
     <nav class="container nav">
-      <a href="/" class="logo">DESCUENTA$</a>
+      <a href="../index.html" class="logo">DESCUENTA$</a>
     </nav>
   </header>
   <main>
@@ -29,25 +32,24 @@
           </h5>
         </div>
         <div>
-          <form name="SUBCRITOS" class="form_registro" id="form_registro">
+          <form action="formulario.php" method="GET" class="form_registro">
             <div class="inputs_registro">
               <div class="input1">
-                <label for="text">Nombre</label>
-                <input id="usuario" type="text" name="usuario" required>
+                <label for="text">Nombre</label> 
+                <input  type="text" name="usuario" required>
               </div>
               <div class="input2">
                 <label for="email">Correo electrónico</label>
-                <input id="correo" type="email" name="correo" required>
+                <input  type="email" name="correo" required>
               </div>
             </div>
             <div class="content_btn">
-              <button type="submit" class="btn_nav">REGISTRARME</button>
+              <button type='submit' class='btn_nav'>REGISTRARME</button>
             </div>
           </form>
         </div>
       </div>
     </section>
   </main>
-  <script src="../js/registro.js"></script>
 </body>
 </html>
