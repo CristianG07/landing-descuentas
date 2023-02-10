@@ -17,7 +17,7 @@
 <body>
   <header class="header">
     <nav class="container nav">
-      <a href="../index.html" class="logo">DESCUENTA$</a>
+      <a href="../index.php" class="logo">DESCUENTA$</a>
     </nav>
   </header>
   <main>

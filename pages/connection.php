@@ -8,7 +8,7 @@ $DB_NAME = "railway";
 $DB_PORT = "6581";
 
 //conetamos al base datos
-$connec = mysqli_connect("mysql://",$DB_USER,":",$DB_PASSWORD,"@",$DB_HOST,":",$DB_PORT,"/",$DB_NAME);
+$connec = mysqli_connect("mysql://",$DB_USER, $DB_PASSWORD, $DB_HOST, $DB_PORT, $DB_NAME);
 
 if ($connec) {
   echo "CONECTADO";
