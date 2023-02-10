@@ -22,7 +22,7 @@
   </header>
   <main>
     <section class="container_form">
-      <div>
+      <div class="content_form">
         <div class="bg--black info_registro">
           <h5 class="title_registro">
             ¡Pronto estaremos lanzando <span>Descuentas</span> en Argentina! <br> <br>

@@ -6,9 +6,6 @@
   --bg-white: rgb(255, 255, 255);
 }
 
-/* font-family: 'Roboto', sans-serif;
-font-family: 'Roboto Condensed', sans-serif; */
-
 ::-webkit-scrollbar {
     display: none;
 }
@@ -374,7 +371,6 @@ p {
   
 }
 
-/* LAPTOPS */
 
 @media screen and (max-width: 992px) {
   p {
@@ -542,7 +538,6 @@ p {
 
   .hero {
     margin-top: 80px;
-    /* height: 100vh; */
   }
 
   .btn_primry {
