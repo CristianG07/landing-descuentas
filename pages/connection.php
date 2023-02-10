@@ -7,6 +7,6 @@ $DB_HOST = "45.32.140.42";
 $DB_NAME = "descuentas_smoketest";
 
 //conetamos al base datos
-$connec = mysqli_connect('$DB_HOST, $DB_USER, $DB_PASSWORD, $DB_NAME');
+$connec = mysqli_connect($DB_HOST, $DB_USER, $DB_PASSWORD, $DB_NAME);
 
 ?>
