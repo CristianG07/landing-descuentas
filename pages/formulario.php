@@ -193,7 +193,7 @@ if(isset($_POST['submit'])) {
         icon: "success",
       })
       .then((value) => {
-        // location.href = "../index.html";
+        location.href = "../index.html";
       });
   
     </script>
