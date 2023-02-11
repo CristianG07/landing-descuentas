@@ -179,7 +179,7 @@ if(isset($_POST['submit'])) {
 
 
   //insertamos datos de registro a la base de datos
-  $instruccion_SQL = "INSERT INTO `registros` (`id`, `usuario`, `correo`, `tarjeta_bancaria`, `descuentos_que_mas_interesan`, `rubros_con_descuentos`, `soluciones_mas_interesadas`, `medio_de_pago`, `compras_por_internet`, `año_de_nacimiento`, `uso_de_descuentos`, `club_de_beneficio`) VALUES (NULL, 'asd', 'a', 'k', 'n', 'n', 'm', 'nk', 'tf', 'j', 'jn', 'kn')";
+  $instruccion_SQL = "INSERT INTO `registros` (`id`, `usuario`, `correo`, `tarjeta_bancaria`, `descuentos_que_mas_interesan`, `rubros_con_descuentos`, `soluciones_mas_interesadas`, `medio_de_pago`, `compras_por_internet`, `año_de_nacimiento`, `uso_de_descuentos`, `club_de_beneficio`) VALUES (NULL, '$usuario', '$correo', '$tarjeta_bancaria', '$descuentos_que_mas_interesan', '$rubros_con_descuentos', '$soluciones_mas_interesadas', '$medio_de_pago', '$compras_por_internet', '$año_de_nacimiento', '$uso_de_descuentos', '$club_de_beneficio')";
                              
   $resultado = mysqli_query($connec, $instruccion_SQL);
   

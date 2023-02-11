@@ -188,7 +188,6 @@ function MultiSelectTag (el, customs = {shadow: false, rounded:true}) {
             li.addEventListener('click', (e) => {
                 options.find((o) => o.value == e.target.dataset.value).selected = true
                 ul_hidden(e.target.dataset.value)
-                console.log(e.target.dataset.value);
                 input.value = null
                 initOptions()
                 setValues()
@@ -215,10 +214,10 @@ function MultiSelectTag (el, customs = {shadow: false, rounded:true}) {
                 inputContainer.removeChild(child)
                 const item_closed = child.firstChild.dataset.value;
                 ul_show(item_closed);
-                console.log(item_closed);
             }
         }
     }
+
     function setValues() {
         // Update element final values
         for(var i = 0; i < options.length; i++) {
@@ -226,6 +225,7 @@ function MultiSelectTag (el, customs = {shadow: false, rounded:true}) {
         }
      
     }
+
     function getOptions() {
         // Map element options
         return [...element.options].map((op) => {
@@ -244,7 +244,6 @@ function MultiSelectTag (el, customs = {shadow: false, rounded:true}) {
         const option4 = document.querySelectorAll('ul')[8];
         const option5 = document.querySelectorAll('ul')[4];
         const option6 = document.querySelectorAll('ul')[5];
-        console.log(option3);
 
         
         if (e == 'sitio web' || e == 'aplicación movil' || e == 'extensión de chrome para la computadora' || e == 'consultas de descuento via whatsapp') {
@@ -281,7 +280,6 @@ function MultiSelectTag (el, customs = {shadow: false, rounded:true}) {
         const option4 = document.querySelectorAll('ul')[8];
         const option5 = document.querySelectorAll('ul')[4];
         const option6 = document.querySelectorAll('ul')[5];
-        console.log(option3);
         
         if (e == 'sitio web' || e == 'aplicación movil' || e == 'extensión de chrome para la computadora' || e == 'consultas de descuento via whatsapp') {
             option1.classList.remove('hidden');
