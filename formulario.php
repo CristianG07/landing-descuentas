@@ -117,7 +117,7 @@
                 <div class="content7 form">
                   <label>¿usas los descuentos que te ofrecen?</label>
                   <select name="uso_de_descuentos" id="uso_de_descuentos" multiple>
-                    <option value="Nunca">Nunca</option>
+                    <option value="NO">No</option>
                     <option value="Poco">Poco</option>
                     <option value="De vez en cuando">De vez en cuando</option>
                     <option value="Frecuentemente">Frecuentemente</option>
@@ -179,9 +179,9 @@ if(isset($_POST['submit'])) {
 
 
   //insertamos datos de registro a la base de datos
-  $instruccion_SQL = "INSERT INTO `registros` (`id`,`usuario`, `correo`, `tarjeta_bancaria`, `descuentos_que_mas_interesan`, `rubros_con_descuentos`, `soluciones_mas_interesadas`, `medio_de_pago`, `compras_por_internet`, `año_de_nacimiento`, `uso_de_descuentos`, `club_de_beneficio`) VALUES (NULL, '$usuario', '$correo', '$tarjeta_bancaria', '$descuentos_que_mas_interesan', '$rubros_con_descuentos', '$soluciones_mas_interesadas', '$medio_de_pago', '$compras_por_internet', '$año_de_nacimiento', '$uso_de_descuentos', '$club_de_beneficio')";
+  $instruccion_SQL = "INSERT INTO `registros` (`id`, `usuario`, `correo`, `tarjeta_bancaria`, `descuentos_que_mas_interesan`, `rubros_con_descuentos`, `soluciones_mas_interesadas`, `medio_de_pago`, `compras_por_internet`, `año_de_nacimiento`, `uso_de_descuentos`, `club_de_beneficio`) VALUES (NULL, 'asd', 'a', 'k', 'n', 'n', 'm', 'nk', 'tf', 'j', 'jn', 'kn')";
                              
-  $resultado = mysqli_query($connec,$instruccion_SQL);
+  $resultado = mysqli_query($connec, $instruccion_SQL);
   
   if ($resultado) {
     

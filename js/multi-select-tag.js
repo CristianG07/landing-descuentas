@@ -21,7 +21,6 @@ function MultiSelectTag (el, customs = {shadow: false, rounded:true}) {
         initOptions()
         enableItemSelection()
         setValues()
-        console.log('conented');
 
         button.addEventListener('click', () => {
             if(drawer.classList.contains('hidden')) {
@@ -270,7 +269,7 @@ function MultiSelectTag (el, customs = {shadow: false, rounded:true}) {
             option4.classList.add('hidden');
         }
         
-        if (e == 'Nunca' || e == 'Poco' || e == 'De vez en cuando' || e == 'Frecuentemente') {
+        if (e == 'NO' || e == 'Poco' || e == 'De vez en cuando' || e == 'Frecuentemente') {
             option3.classList.add('hidden');
         }
     }
@@ -288,7 +287,7 @@ function MultiSelectTag (el, customs = {shadow: false, rounded:true}) {
             option1.classList.remove('hidden');
         }
 
-        if (e == 'Nunca' || e == 'Poco' || e == 'De vez en cuando' || e == 'Frecuentemente') {
+        if (e == 'NO' || e == 'Poco' || e == 'De vez en cuando' || e == 'Frecuentemente') {
             option3.classList.remove('hidden');
         }
 
