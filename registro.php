@@ -8,8 +8,8 @@
 
 
   <!-- LINKS CSS -->
-  <link rel="stylesheet" href="../css/normalize.css">
-  <link rel="stylesheet" href="../css/registro.css">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/registro.css">
 
 
   <title>Descuenta$</title>
@@ -17,7 +17,7 @@
 <body>
   <header class="header">
     <nav class="container nav">
-      <a href="../index.php" class="logo">DESCUENTA$</a>
+      <a href="./index.php" class="logo">DESCUENTA$</a>
     </nav>
   </header>
   <main>

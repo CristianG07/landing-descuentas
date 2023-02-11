@@ -21,6 +21,7 @@ function MultiSelectTag (el, customs = {shadow: false, rounded:true}) {
         initOptions()
         enableItemSelection()
         setValues()
+        console.log('conented');
 
         button.addEventListener('click', () => {
             if(drawer.classList.contains('hidden')) {
@@ -188,6 +189,7 @@ function MultiSelectTag (el, customs = {shadow: false, rounded:true}) {
             li.addEventListener('click', (e) => {
                 options.find((o) => o.value == e.target.dataset.value).selected = true
                 ul_hidden(e.target.dataset.value)
+                console.log(e.target.dataset.value);
                 input.value = null
                 initOptions()
                 setValues()
@@ -214,6 +216,7 @@ function MultiSelectTag (el, customs = {shadow: false, rounded:true}) {
                 inputContainer.removeChild(child)
                 const item_closed = child.firstChild.dataset.value;
                 ul_show(item_closed);
+                console.log(item_closed);
             }
         }
     }
@@ -242,14 +245,11 @@ function MultiSelectTag (el, customs = {shadow: false, rounded:true}) {
         const option4 = document.querySelectorAll('ul')[8];
         const option5 = document.querySelectorAll('ul')[4];
         const option6 = document.querySelectorAll('ul')[5];
+        console.log(option3);
 
         
         if (e == 'sitio web' || e == 'aplicación movil' || e == 'extensión de chrome para la computadora' || e == 'consultas de descuento via whatsapp') {
             option1.classList.add('hidden');
-        }
-
-        if (e == 'No' || e == 'Poco' || e == 'De vez en cuando' || e == 'Frecuentemente') {
-            option3.classList.add('hidden');
         }
 
         if (e == 'No compro online' || e == '1 o 2 veces por año' || e == 'Cada 2 o 3 meses' || e == '1 o 2 veces al mes' || e == '3 a 5 veces al mes' || e == 'más de 5 veces al mes') {
@@ -269,6 +269,10 @@ function MultiSelectTag (el, customs = {shadow: false, rounded:true}) {
         if (e == 'si' || e == 'no') {
             option4.classList.add('hidden');
         }
+        
+        if (e == 'Nunca' || e == 'Poco' || e == 'De vez en cuando' || e == 'Frecuentemente') {
+            option3.classList.add('hidden');
+        }
     }
 
     ul_show = (e) => {
@@ -278,12 +282,13 @@ function MultiSelectTag (el, customs = {shadow: false, rounded:true}) {
         const option4 = document.querySelectorAll('ul')[8];
         const option5 = document.querySelectorAll('ul')[4];
         const option6 = document.querySelectorAll('ul')[5];
+        console.log(option3);
         
         if (e == 'sitio web' || e == 'aplicación movil' || e == 'extensión de chrome para la computadora' || e == 'consultas de descuento via whatsapp') {
             option1.classList.remove('hidden');
         }
 
-        if (e == 'NO' || e == 'Poco' || e == 'De vez en cuando' || e == 'Frecuentemente') {
+        if (e == 'Nunca' || e == 'Poco' || e == 'De vez en cuando' || e == 'Frecuentemente') {
             option3.classList.remove('hidden');
         }
 

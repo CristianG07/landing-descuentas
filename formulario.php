@@ -8,16 +8,16 @@
 
 
     <!-- LINKS CSS -->
-    <link rel="stylesheet" href="../css/normalize.css" />
-    <link rel="stylesheet" href="../css/formulario.css" />
-    <link rel="stylesheet" href="../css/multi-select-tag.css">
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/formulario.css" />
+    <link rel="stylesheet" href="./css/multi-select-tag.css">
 
     <title>Descuenta$</title>
   </head>
   <body>
     <header class="header">
       <nav class="container nav">
-        <a href="../index.php" class="logo">DESCUENTA$</a>
+        <a href="./index.php" class="logo">DESCUENTA$</a>
       </nav>
     </header>
 
@@ -117,7 +117,7 @@
                 <div class="content7 form">
                   <label>¿usas los descuentos que te ofrecen?</label>
                   <select name="uso_de_descuentos" id="uso_de_descuentos" multiple>
-                    <option value="NO">No</option>
+                    <option value="Nunca">Nunca</option>
                     <option value="Poco">Poco</option>
                     <option value="De vez en cuando">De vez en cuando</option>
                     <option value="Frecuentemente">Frecuentemente</option>
@@ -141,7 +141,7 @@
         </div>
       </section>
     </main>
-    <script src="../js/multi-select-tag.js"></script>
+    <script src="./js/multi-select-tag.js"></script>
     <script>
       new MultiSelectTag('tarjeta_bancaria')
       new MultiSelectTag('descuentos_que_mas_interesan')
@@ -179,7 +179,7 @@ if(isset($_POST['submit'])) {
 
 
   //insertamos datos de registro a la base de datos
-  $instruccion_SQL = "INSERT INTO `registro` (`usuario`, `correo`, `tarjeta_bancaria`, `descuentos_que_mas_interesan`, `rubros_con_descuentos`, `soluciones_mas_interesadas`, `medio_de_pago`, `compras_por_internet`, `año_de_nacimiento`, `uso_de_descuentos`, `club_de_beneficio`) VALUES ('$usuario', '$correo', '$tarjeta_bancaria', '$descuentos_que_mas_interesan', '$rubros_con_descuentos', '$soluciones_mas_interesadas', '$medio_de_pago', '$compras_por_internet', '$año_de_nacimiento', '$uso_de_descuentos', '$club_de_beneficio')";
+  $instruccion_SQL = "INSERT INTO `registro` (`id`,`usuario`, `correo`, `tarjeta_bancaria`, `descuentos_que_mas_interesan`, `rubros_con_descuentos`, `soluciones_mas_interesadas`, `medio_de_pago`, `compras_por_internet`, `año_de_nacimiento`, `uso_de_descuentos`, `club_de_beneficio`) VALUES (NULL, '$usuario', '$correo', '$tarjeta_bancaria', '$descuentos_que_mas_interesan', '$rubros_con_descuentos', '$soluciones_mas_interesadas', '$medio_de_pago', '$compras_por_internet', '$año_de_nacimiento', '$uso_de_descuentos', '$club_de_beneficio')";
                              
   $resultado = mysqli_query($connec,$instruccion_SQL);
   
@@ -193,7 +193,7 @@ if(isset($_POST['submit'])) {
         icon: "success",
       })
       .then((value) => {
-        location.href = "../index.html";
+        location.href = "./index.php";
       });
   
     </script>
