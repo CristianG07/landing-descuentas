@@ -17,7 +17,7 @@
 <body>
   <header class="header">
     <nav class="container nav">
-      <a href="/" class="logo">DESCUENTA$</a>
+      <a href="#" class="logo">DESCUENTA$</a>
       <a class="btn_nav" href="./registro.php">INSTALAR GRATIS</a>
     </nav>
   </header>
@@ -157,7 +157,7 @@
   <footer class="footer">
     <section class="container container_footer">
       <div>
-        <a href="/" class="logo logo_footer">DESCUENTA$</a>
+        <a href="#" class="logo logo_footer">DESCUENTA$</a>
       </div>
       <div class="content">
         <div class="btn">
