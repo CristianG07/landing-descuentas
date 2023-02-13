@@ -1,19 +1,20 @@
 <?php
 
 //validamos datos del servidor
-$DB_USER = "id20285018_wp_f740d690f648a28d8a47958e41ad6f61";
+$DB_USER = "descuentas_smoke";
 $DB_HOST = "localhost";
-$DB_PASSWORD = "7I2HIXeDoUt@mFS3";
-$DB_NAME = "id20285018_wp_f740d690f648a28d8a47958e41ad6f61";
+$DB_PASSWORD = "n27e-+}+G=NbBK#lVFT6gR1qsOWQ+aZs";
+$DB_NAME = "descuentas_smoketest";
 // $DB_PORT = "6581";
 
 //conetamos al base datos
-$connec = mysqli_connect($DB_HOST, $DB_USER, $DB_PASSWORD, $DB_NAME);
+// $connec = mysqli_connect($DB_HOST, $DB_USER, $DB_PASSWORD, $DB_NAME);
+$connec = mysqli_connect("mysql://root:6rMMGRLwVBaiATvH9I75@containers-us-west-182.railway.app:6581/railway");
 
-// if (!$connec) {
-//   die("Connection failed: " . mysqli_connect_error());
-// }
-// echo "Connected successfully";
-// mysqli_close($connec);
+if (!$connec) {
+  die("Connection failed: " . mysqli_connect_error());
+}
+echo "Connected successfully";
+mysqli_close($connec);
 
 ?>
