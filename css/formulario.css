@@ -51,6 +51,21 @@ button {
   cursor: pointer;
 }
 
+.btn_form {
+  background-color: var(--bg-yellow);
+  color: var(--bg-black);
+  border-radius: 10px;
+  font-weight: 900;
+  font-size: 14px;
+  padding: 15px 17px;
+}
+
+.btn_form:hover {
+  background-color: var(--bg-white);
+  color: var(--bg-yellow);
+  outline: 2px solid var(--bg-yellow);
+}
+
 .container {
   width: 88%;
   margin-left: auto;
@@ -104,7 +119,7 @@ button {
 }
 
 .btn_nav:hover {
-  background-color: var(--bg-white);
+  background-color: var(--bg-black);
   color: var(--bg-yellow);
   outline: 2px solid var(--bg-yellow);
 }
@@ -312,6 +327,7 @@ h3{
 
 }
 
+
 @media screen and (max-width: 527px) {
 
   .content_formulario,
@@ -336,6 +352,89 @@ h3{
 
   .title_formulario {
     font-size: 20px;
+  }
+
+}
+
+
+/* FOOTER STYLES */
+
+.footer {
+  display: flex;
+  height: 261px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--bg-black);
+}
+
+.logo_footer {
+  font-size: 28px;
+  color: var(--bg-yellow);
+}
+
+.title_footer {
+  font-weight: 800;
+  font-size: 22px;
+  color: var(--bg-white);
+}
+
+.socials,
+.title_footer {
+  transform: translateX(-75px);
+}
+
+.social {
+  fill: var(--bg-white);
+}
+
+.social:hover {
+  fill: var(--bg-yellow);
+}
+
+.info_footer {
+  display: flex;
+  gap: 40px;
+}
+
+.content {
+  display: flex;
+  gap: 28px;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.container_footer {
+  display: flex;
+  justify-content: space-between; 
+}
+
+
+/* TABLETS */
+
+@media screen and (max-width: 768px) {
+
+  .footer {
+    justify-content: center;
+  }
+
+  .container_footer {
+    text-align: center;
+    flex-direction: column;
+    gap: 30px;
+  }
+ 
+  .socials,
+  .title_footer {
+    transform: translateX(0);
+  }
+  
+  .info_footer {
+    gap: 25px;
+  }
+
+  .content {
+    gap: 30px;
+    flex-direction: column;
   }
 
 }

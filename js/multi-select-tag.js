@@ -254,7 +254,7 @@ function MultiSelectTag (el, customs = {shadow: false, rounded:true}) {
             option5.classList.add('hidden');
         }
         
-        for($i = 2023; $i >= 1995; $i--) {
+        for($i = 2023; $i >= 1940; $i--) {
             if (e == $i) {
                 option6.classList.add('hidden');
             }
@@ -293,7 +293,7 @@ function MultiSelectTag (el, customs = {shadow: false, rounded:true}) {
             option5.classList.remove('hidden');
         }
 
-        for($i = 2023; $i >= 1995; $i--) {
+        for($i = 2023; $i >= 1940; $i--) {
             if (e == $i) {
                 option6.classList.remove('hidden');
             }

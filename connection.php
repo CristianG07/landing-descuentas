@@ -1,14 +1,13 @@
 <?php
 
 //validamos datos del servidor
-$DB_USER = "root";
-$DB_HOST = "containers-us-west-136.railway.app";
-$DB_PASSWORD = "pchI5VEgjuDmbWmx9dKZ";
-$DB_NAME = "railway";
-$DB_PORT = 6429;
+$DB_USER = "descuentas_smoke";
+$DB_HOST = "localhost";
+$DB_PASSWORD = "n27e-+}+G=NbBK#lVFT6gR1qsOWQ+aZs";
+$DB_NAME = "descuentas_smoketest";
 
 //conetamos al base datos
-$connec = mysqli_connect($DB_HOST, $DB_USER, $DB_PASSWORD, $DB_NAME, $DB_PORT);
+$connec = mysqli_connect($DB_HOST, $DB_USER, $DB_PASSWORD, $DB_NAME);
 
 // if (!$connec) {
 //   die("Connection failed: " . mysqli_connect_error());
